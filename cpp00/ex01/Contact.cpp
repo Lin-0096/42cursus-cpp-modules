@@ -51,7 +51,7 @@ std::string Contact::getNickName() const
 	return (nickName);
 }
 
-std::string Contact::getPhoneNUmber() const
+std::string Contact::getPhoneNumber() const
 {
 	return (phoneNumber);
 }
