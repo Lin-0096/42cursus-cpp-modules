@@ -1,15 +1,9 @@
 #include "Contact.hpp"
 #include <iostream>
 
-Contact::Contact()
-{
-	std::cout << "Contact created" << std::endl; //test
-}
+Contact::Contact() {}
 
-Contact::~Contact()
-{
-	std::cout << "Contact destroied" << std::endl; //test
-}
+Contact::~Contact() {}
 
 void	Contact::setFirstName(const std::string& value)
 {

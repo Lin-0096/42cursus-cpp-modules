@@ -17,10 +17,10 @@ $(OBJ_DIR)/%.o : %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(OBJ_DIR)
+	@rm -rf $(OBJ_DIR)
 
 fclean:
-	rm -rf $(OBJ_DIR) $(NAME)
+	@rm -rf $(OBJ_DIR) $(NAME)
 
 re: fclean all
 
