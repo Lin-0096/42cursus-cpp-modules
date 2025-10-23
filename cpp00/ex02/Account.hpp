@@ -17,8 +17,6 @@
 // ************************************************************************** //
 
 class Account {
-
-
 public:
 
 	typedef Account		t;
@@ -37,7 +35,6 @@ public:
 	int		checkAmount( void ) const;
 	void	displayStatus( void ) const;
 
-
 private:
 
 	static int	_nbAccounts;
@@ -53,7 +50,6 @@ private:
 	int				_nbWithdrawals;
 
 	Account( void );
-
 };
 
 
