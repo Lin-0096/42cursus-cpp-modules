@@ -1,10 +1,10 @@
 NAME := dreamjob
 
 CXX := c++
-CXXFLAGS := -Wall -Wextra -Werror -std=c++20
+CXXFLAGS := -Wall -Wextra -Werror -std=c++20 -Wno-deprecated-declarations
 
 OBJ_DIR := obj
-SRC := tests.cpp Account.cpp
+SRC := test.cpp Account.cpp
 OBJ := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
 all: $(NAME)

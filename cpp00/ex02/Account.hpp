@@ -27,7 +27,7 @@ public:
 	static int	getNbWithdrawals( void );
 	static void	displayAccountsInfos( void );
 
-	Account( int initial_deposit );
+	Account( int initial_deposit ); //main constructor
 	~Account( void );
 
 	void	makeDeposit( int deposit );
@@ -49,7 +49,7 @@ private:
 	int				_nbDeposits;
 	int				_nbWithdrawals;
 
-	Account( void );
+	Account( void ); //to avoid define a account without parameters, more safe
 };
 
 
