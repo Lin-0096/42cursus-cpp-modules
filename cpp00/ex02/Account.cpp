@@ -1,17 +1,5 @@
 #include "Account.hpp"
 #include <iostream>
-<<<<<<< HEAD
-
-//static variables shared by all objects, they must be defined outside the class.
-int	_nbAccounts = 0;
-int	_totalAmount = 0;
-int	_totalNbDeposits = 0;
-int	_totalNbWithdrawals = 0;
-
-void	_displayTimestamp(void)
-{
-
-=======
 #include <chrono>
 #include <iomanip> // for std::put_time
 
@@ -55,7 +43,6 @@ void	Account::_displayTimestamp(void)
 	auto now = std::chrono::system_clock::now(); //return time_point
 	std::time_t t = std::chrono::system_clock::to_time_t(now); //convers time_point to time_t(since 1970, in seconds)
 	std::cout << std::put_time(localtime(&t), "[%Y%m%d_%H%M%S] ");
->>>>>>> ef7cc9ffd7aea720a91d5f874afa336ba4699c59
 }
 
 Account::Account(int initial_deposit)
@@ -79,8 +66,6 @@ Account::~Account()
 			<< ";amout" << _amount
 			<< ";closed" << std::endl;
 }
-<<<<<<< HEAD
-=======
 
 void	Account::displayStatus() const
 {
@@ -139,4 +124,3 @@ Account::Account(void)
 	_nbDeposits(0),
 	_nbWithdrawals(0)
 {}
->>>>>>> ef7cc9ffd7aea720a91d5f874afa336ba4699c59
