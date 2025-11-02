@@ -17,8 +17,11 @@
 // ************************************************************************** //
 
 class Account {
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ef7cc9ffd7aea720a91d5f874afa336ba4699c59
 public:
 
 	typedef Account		t;
@@ -29,7 +32,11 @@ public:
 	static int	getNbWithdrawals( void );
 	static void	displayAccountsInfos( void );
 
+<<<<<<< HEAD
 	Account( int initial_deposit );
+=======
+	Account( int initial_deposit ); //main constructor
+>>>>>>> ef7cc9ffd7aea720a91d5f874afa336ba4699c59
 	~Account( void );
 
 	void	makeDeposit( int deposit );
@@ -37,7 +44,10 @@ public:
 	int		checkAmount( void ) const;
 	void	displayStatus( void ) const;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ef7cc9ffd7aea720a91d5f874afa336ba4699c59
 private:
 
 	static int	_nbAccounts;
@@ -52,8 +62,12 @@ private:
 	int				_nbDeposits;
 	int				_nbWithdrawals;
 
+<<<<<<< HEAD
 	Account( void );
 
+=======
+	Account( void ); //to avoid define a account without parameters, more safe
+>>>>>>> ef7cc9ffd7aea720a91d5f874afa336ba4699c59
 };
 
 
