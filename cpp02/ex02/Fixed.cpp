@@ -60,6 +60,10 @@ int Fixed::toInt( void ) const
 	return _rawBits >> _fractionalBits; //Shift the bits to the right by 8
 }
 
+
+
+
+
 std::ostream& operator<<(std::ostream& out, const Fixed& fixed)
 {
 	return out << fixed.toFloat();

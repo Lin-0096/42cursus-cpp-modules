@@ -19,6 +19,6 @@ private:
 #endif
 
 //if we don't define =, = just does shallow copy,so if b=a, both a and b point to the same memory, if one is changed or deleted, the other is affected, this is shallow copy.
-//wiht custom operate=, it is deep copy, after b=a, they have different memory block, same value
+//with custom operate=, it is deep copy, after b=a, they have different memory block, same value
 
 
