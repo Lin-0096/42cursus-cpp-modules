@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-#include <fstream> //std::ifstream（input file stream）
+#include <fstream> //file stream for file i/o
 #include <sstream> //std::stringstream
 
 std::string replaceAll(std::string& text, const std::string& s1, const std::string& s2);
