@@ -31,6 +31,11 @@ public:
 	Fixed operator*(const Fixed& other) const;
 	Fixed operator/(const Fixed& other) const;
 
+	Fixed& operator++();// we should increment itself first, so we should use reference
+	Fixed& operator--();
+	Fixed operator++(int); //int here just fake parameter, it tells computer this is the post-increment, we should return the old value first, so we should save it to a tmp(copy) one, otherwise the old value will be changed
+	Fixed operator--(int);
+
 	static Fixed& min(Fixed& a, Fixed& b);
 	static const Fixed& min(const Fixed& a, const Fixed& b);
 	static Fixed& max(Fixed& a, Fixed& b);
