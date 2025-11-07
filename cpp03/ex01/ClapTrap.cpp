@@ -1,6 +1,11 @@
 #include "ClapTrap.hpp"
 #include <iostream>
 
+ClapTrap::ClapTrap()
+:ClapTrap("ClapTrap") //Delegate default construction to the name-based constructor
+{
+}
+
 ClapTrap::ClapTrap(const std::string& name)
 :name(name),
 hitPoints(10),
