@@ -1,14 +1,21 @@
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 #include <iostream>
 
 int main()
 {
-	FragTrap frag("ff");
+	std::cout << "===" << std::endl;
+	DiamondTrap d1("DiamondOne");
+	d1.attack("Enemy");
+	d1.guardGate();
+	d1.highFivesGuys();
+	d1.whoAmI();
 
-	frag.attack("zombie");
-	frag.takeDamage(50);
-	frag.beRepaired(30);
-	frag.highFivesGuys();
+	//copy di-d2
+	std::cout << "===" << std::endl;
+	DiamondTrap d2(d1); //DiamondTrap(const DiamondTrap& other)
 
-	std::cout << "destruction order is:" << std::endl;
+	//assigning d1 to d3
+	std::cout << "===" << std::endl;
+	DiamondTrap d3;
+	d3 = d1;
 }

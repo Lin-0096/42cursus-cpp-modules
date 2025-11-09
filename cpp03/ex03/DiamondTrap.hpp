@@ -3,6 +3,7 @@
 
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
 
 class DiamondTrap : public FragTrap, public ScavTrap
 //this may leads to Multiple Inheritance, so in FragTrap and ScavTrap should be vitural inheritance

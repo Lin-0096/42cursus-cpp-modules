@@ -1,10 +1,10 @@
-NAME := fragtrap
+NAME := diamondtrap
 
 CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++20 -MMD -MP
 
 OBJ_DIR := obj
-SRC := main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+SRC := main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 OBJ := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
 all: $(NAME)
