@@ -34,7 +34,7 @@ std::string Brain::getIdea(int i) const
 	return ideas[i];
 }
 
-void Brain::setIdea(int i, std::string& idea)
+void Brain::setIdea(int i, const std::string& idea)
 {
 	if (i >= 0 && i < 100)
 		this->ideas[i] = idea;

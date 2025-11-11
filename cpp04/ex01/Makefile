@@ -4,7 +4,7 @@ CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++20
 
 OBJ_DIR := obj
-SRC := main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+SRC := main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 OBJ := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
 all: $(NAME)
