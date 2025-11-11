@@ -8,8 +8,8 @@ WrongAnimal::WrongAnimal()
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal& other)
+:type(other.type)
 {
-	*this = other;
 	std::cout << "WrongAnimal copy constructor called" << std::endl;
 }
 
@@ -33,7 +33,7 @@ const std::string& WrongAnimal::getType() const
 
 void WrongAnimal::makeSound() const
 {
-	std::cout << "* generic WrongAnimal sound *" << std::endl;
+	std::cout << "generic WrongAnimal sound" << std::endl;
 }
 
 
