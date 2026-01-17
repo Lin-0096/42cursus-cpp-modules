@@ -4,7 +4,7 @@ CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++20
 
 OBJ_DIR := obj
-SRC := main.cpp Bureaucrat.cpp Bureaucrat.hpp
+SRC := main.cpp Bureaucrat.cpp
 OBJ := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
 all: $(NAME)
