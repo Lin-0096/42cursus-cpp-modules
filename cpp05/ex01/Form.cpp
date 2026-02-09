@@ -42,7 +42,7 @@ int Form::getGradeToExecute() const
 std::ostream& operator<<(std::ostream& out, const Form& f)
 {
 	out << f.getName()
-		<<", signed: " << (f.getIsSigned() ? "yes" : "NO")
+		<<", signed: " << (f.getIsSigned() ? "yes" : "no")
 		<<", grade to sign: " << f.getGradeToSign()
 		<<", grade to execute: " << f.getGradeToExecute();
 	return out;

@@ -75,7 +75,7 @@ int main()
 		Bureaucrat boss("Boss", 1);
 		Bureaucrat intern("Intern", 150);
 
-		Form f7("Boundary Form", 150, 1);
+		Form f7("Boundary Form", 149, 1);
 
 		boss.signForm(f7);     // should succeed
 		intern.signForm(f7);  // should fail
