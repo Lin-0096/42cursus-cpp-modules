@@ -1,5 +1,5 @@
 #include "Bureaucrat.hpp"
-#include "Form.hpp"
+#include "AForm.hpp"
 
 Bureaucrat::Bureaucrat()
 :_grade(1),
@@ -31,14 +31,12 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat& other)
 	return *this;
 }
 
-Bureaucrat::~Bureaucrat(){}
-
 int Bureaucrat::getGrade()const
 {
 	return (this->_grade);
 }
 
-void Bureaucrat::signForm(Form& form) const
+void Bureaucrat::signForm(AForm& form) const
 {
 	try
 	{
@@ -48,6 +46,20 @@ void Bureaucrat::signForm(Form& form) const
 	catch(std::exception& e)
 	{
 		std::cout << _name << " couldn't sign " << form.getName() << " because "
+					<< e.what() << std::endl;
+	}
+}
+
+void Bureaucrat::executeForm(const AForm& form) const
+{
+	try
+	{
+		form.execute(*this);
+		std::cout << _name << " executed " << form.getName() << std::endl;
+	}
+	catch(std::exception& e)
+	{
+		std::cout << _name << " couldn't execute " << form.getName() << " because "
 					<< e.what() << std::endl;
 	}
 }

@@ -1,7 +1,7 @@
 #ifndef BUREAUCRAT_HPP
 #define BUREAUCRAT_HPP
 
-#include "Form.hpp"
+#include "AForm.hpp"
 #include <string>
 #include <iostream>
 
@@ -16,13 +16,14 @@ public:
 	Bureaucrat(const std::string& name, int grade);
 	Bureaucrat(const Bureaucrat& other);
 	Bureaucrat& operator=(const Bureaucrat& other);
-	~Bureaucrat();
+	~Bureaucrat() = default;
 
 	int getGrade()const;
 	const std::string& getName()const;
 	void incrementGrade();
 	void decrementGrade();
-	void signForm(Form& form) const; //const?
+	void signForm(AForm& form) const;
+	void executeForm(const AForm& form) const;
 
 	class GradeTooHighException : public std::exception
 	{

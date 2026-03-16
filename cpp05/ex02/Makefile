@@ -1,4 +1,4 @@
-NAME := Form
+NAME := AForm
 
 CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++20
