@@ -1,9 +1,9 @@
-NAME = convert
+NAME = identify
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++20
 
-SRCS = main.cpp ScalarConverter.cpp
+SRCS = main.cpp Base.cpp generate.cpp identify.cpp
 OBJ_DIR = obj
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 
@@ -12,7 +12,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
-$(OBJ_DIR)/%.o: %.cpp ScalarConverter.hpp
+$(OBJ_DIR)/%.o: %.cpp Base.hpp
 	@mkdir -p $(OBJ_DIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
